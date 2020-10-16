@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Raleway', sans-serif;
+    	
+}
+
+body
+{
+	font-family: Raleway, sans-serif;
+	width: 90%;
+	margin: auto;
+}
+
+footer
+{
+	display: flex;
+	background-color: #F2F2F2;
+	width: 100%;
+	margin: auto;
+}
