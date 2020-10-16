@@ -1,4 +1,5 @@
-P2_Reservia# P2_Reservia
+<h2>P2_Reservia</h2>
+
 Projet 2 du parcours Développeur Web Junior d'Openclassrooms - Reservia, transformez une maquette en site web.
 
 <h3>ÉLÉMENTS DONNÉS :</h3>
