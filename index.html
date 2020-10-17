@@ -12,43 +12,190 @@
         <header>
             <img id="logo" src="img/Reservia.svg"></img>
             <nav id="navigation">
-            <a href="#Herbergement">Hébergement</a> <a href="#Activités">Activités</a> <a href="">S'inscrire</a></li>
+                <a class="boutonnav" href="#Herbergement">Hébergement</a>
+                <a class="boutonnav" href="#Activités">Activités</a>
+                <a class="boutoninsc" href="#">S'inscrire</a>
             </nav>
         </header>
-        <!-- Section Recherche -->
-        <section id="Recherche">
-            <h2>Trouvez votre hébergement pour des vacances de rêves</h2>
-            <h3>En plein centre ville ou en pleine nature</h3>
-            <form method="post" action="traitement.php">
-                <p><input type="search" name="recherche" placeholder="Marseille, France"/><input type="submit" value="Rechercher" /></p>
-            </form>
-        </section>
-        <!-- Section Filtres -->
-        <section id="Filtres"></section>
-        <!-- Section Hébergement -->
-        <section id="Hebergement"></section>
-        <!-- Section Activités -->
-        <section id="Activites"></section>
+        <!-- Main -->
+        <main>
+            <!-- Section Recherche -->
+            <section id="Recherche">
+                <div id="intro">
+                    <h2>Trouvez votre hébergement pour des vacances de rêves</h2>
+                    <h3>En plein centre ville ou en pleine nature</h3>
+                </div>
+                <div id=formulaire>
+                    <form method="post" action="traitement.php">
+                        <p><input type="search" name="recherche" placeholder="Marseille, France"/><input type="submit" value="Rechercher" /></p>
+                    </form>
+                </div>
+            </section>
+            <!-- Section Filtres -->
+            <section id="Filtres">
+                <h2>Filtres</h2>
+                <div id="filtresblock">
+                    <div class="filtrebouton">
+                        Economique
+                    </div>
+                    <div class="filtrebouton">
+                        Familial
+                    </div>
+                    <div class="filtrebouton">
+                        Romantique
+                    </div>
+                    <div class="filtrebouton">
+                        Animaux autorisés
+                    </div>
+                </div>
+                <div id="resultat">
+                    Plus de 500 logements sont disponibles dans cette ville
+                </div>
+            </section>
+            <!-- Section Hébergement -->
+            <section id="Hebergement">
+                <div id="Hebergementblock">
+                    <div id="Hebergementresultat">
+                        <h2>Hébergements à Marseille</h2>
+                        <div id="Hebergementcard">
+                            <div class="Hebergementcard">
+                                <img> 
+                                <h4>Auberge la Cannebière</h4>
+                                Nuit à partir de 25€
+                                étoiles
+                            </div>
+                            <div class="Hebergementcard">
+                                <img> 
+                                <h4>Hôtel du port</h4>
+                                Nuit à partir de 52€
+                                étoiles
+                            </div>
+                            <div class="Hebergementcard">
+                                <img> 
+                                <h4>Hôtel Les mouettes</h4>
+                                Nuit à partir de 76€
+                                étoiles
+                            </div>
+                            <div class="Hebergementcard">
+                                <img> 
+                                <h4>Hôtel de la mer</h4>
+                                Nuit à partir de 46€
+                                étoiles
+                            </div>
+                            <div class="Hebergementcard">
+                                <img> 
+                                <h4>Auberge Le Panier</h4>
+                                Nuit à partir de 23€
+                                étoiles
+                            </div>
+                            <div class="Hebergementcard">
+                                <img> 
+                                <h4>Hôtel chez Amina</h4>
+                                Nuit à partir de 96€
+                                étoiles
+                            </div>
+                        </div>
+                        <a href="#">Afficher plus</a>
+                    </div>
+                    <div id="Popular">
+                        <div id="populartitle">
+                            <h2>Les plus populaires</h2> 
+                            <p>+icone</p>
+                        </div>
+                        <div id="popularcard">
+                            <div class="popularcard">
+                                <img> 
+                                <h4>Hôtel Le soleil du matin</h4>
+                                Nuit à partir de 128€
+                                étoiles
+                            </div>
+                            <div class="popularcard">
+                                <img> 
+                                <h4>Au cœur de l'eau Chambres d'hôtes</h4>
+                                Nuit à partir de 71€
+                                étoiles
+                            </div>
+                            <div class="popularcard">
+                                <img> 
+                                <h4>Hôtel Tout bleu et blanc</h4>
+                                Nuit à partir de 68€
+                                étoiles
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section Activités -->
+            <section id="Activites">
+                <h2>Activités</h2>
+                <div id="Activitesblock">
+                    <div class="activitescolumn">
+                        <a href="#">
+                            <div class="activitescard">
+                                <img src="" alt="">
+                                <h3>Vieux Port</h3>
+                           </div>
+                         </a>
+                    </div>
+                    <div class="activitescolumn">
+                         <a href="#">
+                            <div class="activitescard">
+                                <img src="" alt="">
+                                <h3>Fort de Pomègues</h3>
+                           </div>
+                         </a>
+                         <a href="#">
+                            <div class="activitescard">
+                                <img src="" alt="">
+                                <h3>Îles du Frioul</h3>
+                           </div>
+                         </a>
+                    </div>
+                    <div class="activitescolumn">
+                         <a href="#">
+                            <div class="activitescard">
+                                <img src="" alt="">
+                                <h3>Parc National des Calanques</h3>
+                           </div>
+                         </a>
+                    </div>
+                    <div class="activitescolumn">
+                         <a href="#">
+                            <div class="activitescard">
+                                <img src="" alt="">
+                                <h3>Notre-Dame-De-La-Garde</h3>
+                           </div>
+                         </a>
+                         <a href="#">
+                            <div class="activitescard">
+                                <img src="" alt="">
+                                <h3>Parc Longchamp</h3>
+                           </div>
+                         </a>
+                    </div>
+                </div>
+            </section>
+        </main>
         <!-- Footer -->
         <footer>
-            <div>
-                <h4>A propos</h4><br>
-                <a href="">Fonctionnement du site</a><br>
-                <a href="">Conditions générales de vente</a><br>
-                <a href="">Données et confidentialité</a>
-            </div>
-            <div>
-                <h4>Nos Hébergements</h4><br>
-                <a href="">Charte qualité</a><br>
-                <a href="">Soumettre votre hôtel</a>
-            </div> 
-            <div>
-                <h4>Assistance</h4><br>
-                <a href="">Centre d'aide</a><br>
-                <a href="">Nous contacter</a>
+            <div id="footercontent">
+                <div class="footercolumn">
+                    <h4>A propos</h4><br>
+                    <a href="#">Fonctionnement du site</a><br>
+                    <a href="#">Conditions générales de vente</a><br>
+                    <a href="#">Données et confidentialité</a>
+                </div>
+                <div class="footercolumn">
+                    <h4>Nos Hébergements</h4><br>
+                    <a href="#">Charte qualité</a><br>
+                    <a href="#">Soumettre votre hôtel</a>
+                </div> 
+                <div class="footercolumn">
+                    <h4>Assistance</h4><br>
+                    <a href="#">Centre d'aide</a><br>
+                    <a href="#">Nous contacter</a>
+                </div>
             </div>             
         </footer>
-    	 
-
     </body>
 </html>
