@@ -15,6 +15,11 @@ a
 	text-decoration: none;
 }
 
+a:visited
+{
+	color: black;
+}
+
 header
 {
 	display: flex;
@@ -39,7 +44,15 @@ header
 	width: 162px;
 	padding-top: 30px;
 	margin: auto;
+	margin-top: 0px;
 	text-align: center;
+	border-top: 2px solid transparent;
+}
+
+.boutonnav:hover
+{
+	color: #0065FC;
+	border-top: 2px solid #0065FC;
 }
 
 .boutoninsc
@@ -48,8 +61,22 @@ header
 	width: 162px;
 	padding-top: 30px;
 	color: #0065FC;
+	font-weight: bold;
 	margin: auto;
+	margin-top: 0px;
 	text-align: center;
+	border-top: 2px solid transparent;
+}
+
+.boutoninsc:hover
+{
+	color: #0065FC;
+	border-top: 2px solid #0065FC;
+}
+
+.boutoninsc:visited
+{
+	color: #0065FC;
 }
 
 main
@@ -59,34 +86,120 @@ main
 	margin: auto;
 }
 
+h1
+{
+	margin-bottom: 0px;
+	margin-top: 35px;
+}
+
+.subtitle
+{
+	margin-top: 5px;
+}
+
+#formulaire
+{
+	display: flex;
+	align-items: center;
+}
+
+.pin
+{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	border-bottom-left-radius: 15px;
+	border-top-left-radius: 15px;
+	height: 50px;
+	padding: 0px 16px;
+	background-color: #f1f3f3;
+}
+
+.fa-map-marker-alt
+{
+	display: inline-block;
+}
+
+.form
+{
+	height: 50px;
+	border: 1px solid #f1f3f3;
+	border-left: 0px;
+	border-right: 0px;
+	padding-left: 15px;
+	font-weight: bold;
+
+}
+
+.search
+{
+	height: 50px;
+	background-color: #0065FC;
+	color: white;
+	border-bottom-right-radius: 15px;
+	border-top-right-radius: 15px;
+	border: 0px;
+	padding: 17px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
 
 #filtresblock
 {
 	display: flex;
+	vertical-align: middle;
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+
+.filtretitle
+{
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin-right: 32px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+
 }
 
 .filtrebouton
 {
 	display: flex;
-	height: 50px;
+	height: 48px;
 	border-radius: 25px;
-	border: 1px solid #d7dada;
+	border: 2px solid #d7dada;
 	align-items: center;
+	margin-right: 24px;
+	transition: transform .2s;
+}
+
+.filtrebouton:hover
+{
+	transform: scale(1.07);
+	background-color: #f2f8ff;
+}
+
+.icone
+{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	height: 52px;
+	width: 52px;
+	border-radius: 100%;
+	background-color: #d8ebff;
+	color: #0065FC;
+	margin: -2px;
 }
 
 .fas-bouton
 {
-	display: flex;
-	height: 50px;
-	width: 50px;
-	border-radius: 100%;
-	align-items: center;
-	justify-content: center;
-	background-color: #d8ebff;
-	color: #0065FC;
+	display: inline-block;
 }
 
-.fa-info
+.info
 {
 	display: flex;
 	align-items: center;
@@ -99,10 +212,24 @@ main
 	margin-right: 12px;
 }
 
+.fa-info
+{
+	display: inline-block;
+}
+
+.filtrename
+{
+	margin-right: 16px;
+	margin-left: 16px;
+	font-weight: bold;	
+	font-size: 1.17em;
+}
+
 #resultat
 {
 	display: flex;
 	align-items: center;
+	margin-bottom: 20px;
 }
 
 .star-blue
@@ -119,6 +246,7 @@ main
 {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 45px;
 }
 
 #Hebergementresultat
@@ -130,11 +258,25 @@ main
 	margin-right: 40px;
 }
 
+.hebergementitle
+{
+	margin-top: 30px;
+	margin-bottom: 23px;
+}
+
 #Hebergementcard
 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+}
+
+.hebergementlink
+{
+	display: block;
+	width: 28%;
+	min-width: 256px;
+
 }
 
 .Hebergementcard
@@ -151,6 +293,7 @@ main
 
 }
 
+
 .imgheberg
 {
 	width: 100%;
@@ -158,6 +301,26 @@ main
 	border-top-right-radius: 16px;
 	border-top-left-radius: 16px;
 	height: 114px;
+}
+
+.hotelname
+{
+	margin: 12px;
+}
+
+.hotelprice
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 11px;
+}
+
+.afficherplus
+{
+	margin-top: 20px;
+	margin-bottom: 45px;
+	font-weight: bold;
+	font-size: 1.17em;
 }
 
 #Popular
@@ -172,6 +335,9 @@ main
 {
 	display: flex;
 	justify-content: space-between;
+	vertical-align: middle;
+	margin-top: 10px;
+	margin-bottom: 3.08px;
 }
 
 #iconepopular
@@ -206,11 +372,31 @@ main
 	border-bottom-left-radius: 16px;
 	border-top-left-radius: 16px;
 	height: 100%;
+	margin-right: 21px;
 }
 
 .populartext
 {
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+}
+
+.pophotelname
+{
+	margin-top: 14px;
+	margin-bottom: 14px;
+}
+
+.popularinfo
+{
 	display: block;
+}
+
+.etoiles
+{
+	display: block;
+	
 }
 
 .fa-chart-line
@@ -218,7 +404,7 @@ main
 	padding-top: 20px;
 }
 
-#Activitesblock
+#activitesblock
 {
 	display: flex;
 	justify-content: space-between;
@@ -296,5 +482,11 @@ footer
 .footercolumn
 {
 	display: block;
-	width: 25.4%;
+	width: 34%;
+}
+
+.footerlink
+{
+	display: block;
+	margin-bottom: 15px;
 }
