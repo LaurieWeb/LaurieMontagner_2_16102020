@@ -303,16 +303,29 @@ h1
 	height: 114px;
 }
 
-.hotelname
+.hebergementinfo
 {
 	margin: 12px;
+	margin-top: 8px;
+	margin-bottom: 0px;
+}
+
+.hotelname
+{
+	margin-top: 0px;
+	margin-bottom: 5px;
 }
 
 .hotelprice
 {
 	margin-top: 0px;
-	margin-bottom: 0px;
-	margin-left: 11px;
+	margin-bottom: 5px;
+}
+
+.etoiles
+{
+	display: block;
+	
 }
 
 .afficherplus
@@ -379,23 +392,36 @@ h1
 {
 	display: flex;
 	flex-direction: column;
-	align-content: space-between;
-}
-
-.pophotelname
-{
-	margin-top: 14px;
-	margin-bottom: 14px;
+	align-content: space-between;	
+	justify-content: space-between;
+	height: 144px;
+	width: 100%;
 }
 
 .popularinfo
 {
-	display: block;
+	display: flex;
+	flex-direction: column;
 }
 
-.etoiles
+.pophotelname
 {
 	display: block;
+	margin: 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.pophotelprice
+{
+	display: block;
+	margin: 0px;
+}
+
+.etoilespop
+{
+	display: block;
+	margin-bottom: 8px; 
 	
 }
 
