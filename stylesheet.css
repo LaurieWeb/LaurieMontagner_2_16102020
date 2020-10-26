@@ -148,8 +148,8 @@ h1
 #filtresblock
 {
 	display: flex;
+	flex-wrap: wrap;
 	vertical-align: middle;
-	margin-bottom: 20px;
 	margin-top: 30px;
 }
 
@@ -172,6 +172,7 @@ h1
 	border: 2px solid #d7dada;
 	align-items: center;
 	margin-right: 24px;
+	margin-bottom: 20px;
 	transition: transform .2s;
 }
 
@@ -286,7 +287,7 @@ h1
 	border: 5px;
 	border-radius: 16px;
 	box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4);
-	width: 28%;
+	width: 100%;
 	min-width: 246px;
 	margin-bottom: 30px;
 	padding: 6px;
@@ -440,9 +441,11 @@ h1
 
 .activitescolumn
 {
-	display: block;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	width: 22.5%;
-	max-height: 445px;
+	height: 445px;
 }
 
 .activitescard
@@ -516,3 +519,290 @@ footer
 	display: block;
 	margin-bottom: 15px;
 }
+
+@media screen and (max-width: 609px)
+{
+		#logo
+		{
+			padding-top: 30px;
+		}
+
+		#navigation
+		{
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.boutonnav
+		{
+			display: block;
+			align-self: flex-end;
+			width: 162px;
+			padding-top: 30px;
+			margin: auto;
+			margin-top: 0px;
+			text-align: center;
+			border-top: 2px solid transparent;
+		}
+
+		.boutoninsc
+		{
+			display: block;
+			width: 162px;
+			padding-top: 30px;
+			color: #0065FC;
+			font-weight: bold;
+			margin: auto;
+			margin-top: 0px;
+			text-align: center;
+			border-top: 2px solid transparent;
+		}
+
+
+		main
+		{
+			width: 100%;
+		}
+
+		#recherche
+		{
+			width: 95%;
+			margin: auto;
+		}
+
+		#filtres
+		{
+			width: 95%;
+			margin: auto;
+		}
+
+		#Hebergementblock
+		{
+			display: flex;			
+   			flex-direction: column-reverse;
+		}
+
+		#Hebergementresultat
+		{
+			width: 100%;
+			background-color: #FFFFFF;
+		}
+
+		.hebergementlink 
+		{
+    		width: 95%;
+    		margin: auto;
+		}
+
+
+		#Popular
+		{
+			width: 100%;
+			margin-bottom: 40px;
+			border-radius: 0px;
+
+		}
+
+		.popularlink 
+		{
+    		width: 95%;
+    		margin: auto;
+		}
+
+		#activites
+		{
+			width: 95%;
+			margin: auto;
+		}
+
+		#activitesblock 
+		{
+    		flex-direction: column;
+    		margin-bottom: 50px;
+    	}
+
+		.activitescolumn 
+		{
+		    width: 100%;
+		    height: auto;
+		}
+
+		.activitescard
+		{
+
+		    height: 190px;
+		}
+
+		.imgactvertical 
+		{
+		    height: 134px;
+		}
+
+		.imgacthorizontal1 
+		{
+    		height: 134px;
+    	}
+
+    	.imgacthorizontal2
+		{
+    		height: 134px;
+    		max-height: 180px;
+    	}
+
+		#footercontent 
+		{
+		     flex-direction: column;
+		}
+
+		.footercolumn 
+		{
+   			 width: 100%;
+   			 margin-left: 40px;
+   		}
+}
+
+@media screen and (max-width: 929px) and (min-width: 610px)
+{
+		#Hebergementblock
+		{
+			display: flex;			
+   			flex-direction: column-reverse;
+		}
+
+		#Hebergementresultat
+		{
+			width: 91%;
+			margin: auto;
+		}
+
+		.hebergementlink 
+		{    
+    		width: 45%;
+    	}
+
+		#Popular
+		{
+			width: 91%;
+			margin: auto;
+			margin-bottom: 40px;
+		}
+
+		#activites
+		{
+			width: 95%;
+			margin: auto;
+		}
+
+		#activitesblock 
+		{
+    		flex-direction: column;
+    		margin-bottom: 50px;
+    	}
+
+		.activitescolumn 
+		{
+		    width: 100%;
+		    height: auto;
+		}
+
+		.activitescard
+		{
+
+		    height: 190px;
+		}
+
+		.imgactvertical 
+		{
+		    height: 134px;
+		}
+
+		.imgacthorizontal1 
+		{
+    		height: 134px;
+    	}
+
+    	.imgacthorizontal2
+		{
+    		height: 134px;
+    		max-height: 180px;
+    	}
+
+
+}
+
+@media screen and (max-width: 1399px) and (min-width: 930px)
+{
+		#Hebergementblock
+		{
+			display: flex;			
+   			flex-direction: column-reverse;
+		}
+
+		#Hebergementresultat
+		{
+			width: 91%;
+			margin: auto;
+		}
+
+
+		#Popular
+		{
+			width: 91%;
+			margin: auto;
+			margin-bottom: 40px;
+		}
+
+		#popularcard
+		{
+			display: flex;		
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		.popularcard
+		{
+			display: block;
+			width: 100%;
+			min-width: 246px;
+			height: 240px;
+			
+		}
+
+		.imgpop
+		{
+			width: 100%;
+			object-fit: cover;
+			border-top-right-radius: 16px;
+			border-top-left-radius: 16px;
+			border-bottom-right-radius: 0px;
+			border-bottom-left-radius: 0px;
+			height: 114px;
+		}
+
+		.poplink
+		{
+			display: block;
+			width: 28%;
+			min-width: 256px;
+		}
+
+		.popularinfo
+		{
+			display: block;
+			margin: 12px;
+			margin-top: 8px;
+			margin-bottom: 0px;
+		}
+
+		.populartext
+			{
+				height: 126px;
+			}
+
+		.etoilespop
+		{
+			margin-left: 12px;
+				
+		}
+}
+
