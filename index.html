@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0,  shrink-to-fit=no" />
@@ -11,13 +11,13 @@
     <body>
         <!-- Header -->
         <header>
-            <img id="logo" src="img/Reservia.svg"></img>
+            <img id="logo" src="img/Reservia.svg" alt="Logo de l'entreprise Reservia">
             <nav id="navigation">
                 <a class="boutonnav" href="#hebergement">Hébergement</a>
                 <a class="boutonnav" href="#activites">Activités</a>
-                <a class="boutoninsc" href="#">S'inscrire</a>
             </nav>
-        </header>
+            <a class="boutoninsc" href="#">S'inscrire</a>
+            </header>
         <!-- Main -->
         <main>
             <!-- Section Recherche -->
@@ -30,8 +30,8 @@
                     <div class="pin">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <form method="post" action="traitement.php">
-                        <input type="search" name="recherche" placeholder="Marseille, France" class="form"><input type="submit" value="Rechercher" class="search">
+                    <form method="post" action="traitement.php" class="formblock">
+                        <input type="search" name="recherche" placeholder="Marseille, France" class="form"><button type="submit" name="button" class="search"><span class="textsearch">Rechercher</span><i class="fas fa-search searchicon"></i></button>
                     </form>
                 </div>
             </section>
@@ -200,7 +200,7 @@
                                         <div class="etoilespop">
                                             <i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-blue"></i><i class="fas fa-star star-gray"></i>
                                         </div>
-                                     </div>
+                                    </div>
                                 </div>
                             </a>
                         </div>
